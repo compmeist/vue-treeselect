@@ -108,7 +108,8 @@
           this.debouncedCallback()
         } else {
           this.debouncedCallback.cancel()
-          this.updateSearchQuery()
+          // this.updateSearchQuery()
+          this.instance.trigger.searchQuery = ""     // should address the "type too fast" problem
         }
       },
 
